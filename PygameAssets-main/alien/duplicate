@@ -1,0 +1,8 @@
+#!/bin/bash
+
+read -p "quel fichier faut il dupliquer ? " a
+count=24
+while [ $count -gt 0 ]; do
+	cp ./alien.png ./alien${count}.png
+	let "count -= 1"
+done
